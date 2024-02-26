@@ -3,8 +3,6 @@ const btnDown = document.querySelector('.down-button');
 const container = document.querySelector('.container');
 const sideBar = document.querySelector('.sidebar');
 
-// нужно получить какое количество картинок мы используем - 
-// обращаемся в блоку main-slide и посчитаем, а сколько внутри у него дивов
 const mainSlide = document.querySelector('.main-slide');
 const slidesCount = mainSlide.querySelectorAll('div').length;
 
@@ -37,3 +35,4 @@ function changeSlide(direction) {
     mainSlide.style.transform = `translateY(-${activeSlideIndex * height}px)`
     sideBar.style.transform = `translateY(${activeSlideIndex * height}px)`
 }
+
